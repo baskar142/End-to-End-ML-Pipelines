@@ -1,9 +1,9 @@
 import os
 import urllib.request as request
 import zipfile
-from mlProject import logger
-from mlProject.utils.common import get_size
-from mlProject.entity.config_entity import DataIngestionConfig
+from wine_quality_prediction import logger
+from wine_quality_prediction.utils.common import get_size
+from wine_quality_prediction.entity.config_entity import DataIngestionConfig
 from pathlib import Path
 
 
@@ -36,3 +36,4 @@ class DataIngestion:
         os.makedirs(unzip_path, exist_ok=True)
         with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
             zip_ref.extractall(unzip_path)
+  

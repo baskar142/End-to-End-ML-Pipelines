@@ -1,6 +1,6 @@
-from mlProject.config.configuration import ConfigurationManager
-from mlProject.components.data_ingestion import DataIngestion
-from mlProject import logger
+from wine_quality_prediction.config.configuration import ConfigurationManager
+from wine_quality_prediction.components.data_ingestion import DataIngestion
+from wine_quality_prediction import logger
 
 
 
